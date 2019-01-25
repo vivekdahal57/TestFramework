@@ -1,0 +1,283 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vh</groupId>
+    <artifactId>mi-web-automation</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
+
+    <scm>
+        <developerConnection>scm:svn:https://svn.d2hawkeye.net/svn/d2svn/VHProducts/SMI/MI_Test_Automation/MI_WEB_AUTOMATION/Trunk</developerConnection>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>nexus-boston</id>
+            <name>boston MI repository</name>
+            <url>http://nvpkgrepop1.d2hawkeye.net:8081/artifactory/public</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.context.version>4.0.6.RELEASE</spring.context.version>
+        <selenium.version>3.5.2</selenium.version>
+        <jdk.version>1.8</jdk.version>
+        <maven-compiler.version>2.3.2</maven-compiler.version>
+        <suiteDir>suites</suiteDir>
+        <suite>scrumqa-testng.xml</suite>
+        <restassured.version>3.0.5</restassured.version>
+        <aspectj.version>1.8.5</aspectj.version>
+        <testng.version>6.9.4</testng.version>
+        <commons-configuration.version>1.6</commons-configuration.version>
+        <com.oracle.version>11.2.0.4.0</com.oracle.version>
+        <exec.mainClass>com.vh.mi.automation.impl.utils.CommandExecutor</exec.mainClass>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.vh</groupId>
+            <artifactId>mi-test-users</artifactId>
+            <version>1.2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>${commons-configuration.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.easytesting</groupId>
+            <artifactId>fest-assert</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.2.0.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6_g</artifactId>
+            <version>${com.oracle.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.1.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jcifs</groupId>
+            <artifactId>jcifs</artifactId>
+            <version>1.3.17</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.m-m-m</groupId>
+            <artifactId>mmm-util-backport-java.util.function</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!--Dependency for allure test framework-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restassured.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vertica</groupId>
+            <artifactId>vertica-jdbc</artifactId>
+            <version>7.1.1-12</version>
+        </dependency>
+        <dependency>
+        <groupId>com.github.mnadeem</groupId>
+        <artifactId>sql-table-name-parser</artifactId>
+        <version>0.0.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.paulhammant/ngwebdriver -->
+        <dependency>
+            <groupId>com.paulhammant</groupId>
+            <artifactId>ngwebdriver</artifactId>
+            <version>1.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-java</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <compilerId>groovy-eclipse-compiler</compilerId>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-compiler</artifactId>
+                        <version>2.9.1-01</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-batch</artifactId>
+                        <version>2.3.7-01</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>${exec.mainClass}</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteDir}/${suite}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <reportsDirectory>${project.build.directory}/testngReports/${suite}</reportsDirectory>
+
+                    <!--Load Time Weaving-->
+                    <argLine>
+                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                    </argLine>
+
+                </configuration>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>2.4.2</version>
+                        <configuration>
+                            <checkModificationExcludes>
+                                <checkModificationExclude>pom.xml.versionsBackup</checkModificationExclude>
+                                <checkModificationExclude>pom.xml</checkModificationExclude>
+                            </checkModificationExcludes>
+                            <tagNameFormat>@{project.version}</tagNameFormat>
+                                <tagBase>https://svn.d2hawkeye.net/svn/d2svn/VHProducts/SMI/MI_Test_Automation/MI_WEB_AUTOMATION/Tags</tagBase>
+                                <branchBase>https://svn.d2hawkeye.net/svn/d2svn/VHProducts/SMI/MI_Test_Automation/MI_WEB_AUTOMATION/Branches</branchBase>
+                            <scmCommentPrefix>${rally.id}${line.separator}</scmCommentPrefix>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
