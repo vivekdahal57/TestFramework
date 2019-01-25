@@ -1,0 +1,52 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:2020/claim/topTenPos",
+  "type": "object",
+  "definitions": {},
+  "schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "posrxcode": {
+            "id": "/properties/data/items/properties/posrxcode",
+            "type": "string",
+            "title": "The Posrxcode Schema ",
+            "default": ""
+          },
+          "posrxdesc": {
+            "id": "/properties/data/items/properties/posrxdesc",
+            "type": "string",
+            "title": "The Posrxdesc Schema ",
+            "default": ""
+          },
+          "paidamt": {
+            "id": "/properties/data/items/properties/paidamt",
+            "type": "number",
+            "title": "The Paidamt Schema ",
+            "default": 0
+          },
+          "pcnt_pos_over_drugs": {
+            "id": "/properties/data/items/properties/pcnt_pos_over_drugs",
+            "type": "number",
+            "title": "The Pcnt_pos_over_drugs Schema ",
+            "default": 0
+          },
+          "pmpm": {
+            "id": "/properties/data/items/properties/pmpm",
+            "type": "number",
+            "title": "The Pmpm Schema ",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

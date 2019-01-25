@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Security">
+    <test name="Security">
+        <classes>
+            <class name="com.vh.mi.automation.test.security.ForgotPasswordTest"/>
+            <class name="com.vh.mi.automation.test.pages.common.LoginPageTest"/>
+            <class name="com.vh.mi.automation.test.reportManager.ReportManageCasLoginTest"/>
+            <class name="com.vh.mi.automation.test.miscrights.AdminPageAccessibilityTest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightFullFinancialAccessTest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightPHITest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightShowMemberScoreCardTest"/>
+            <class name="com.vh.mi.automation.test.saml.SSOTests"/>
+            <class name="com.vh.mi.automation.test.security.UsersAccessTest"/>
+        </classes>
+    </test>
+</suite>

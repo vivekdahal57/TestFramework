@@ -1,0 +1,79 @@
+{
+  "id": "http://localhost:1800/ervisit/topCondForER/acc",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "rhccData": {
+          "id": "/properties/data/properties/rhccData",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/rhccData/items",
+            "type": "object",
+            "properties": {
+              "rcccode": {
+                "id": "/properties/data/properties/rhccData/items/properties/rcccode",
+                "type": "integer"
+              },
+              "acccode": {
+                "id": "/properties/data/properties/rhccData/items/properties/acccode",
+                "type": "integer"
+              },
+              "rccdesc": {
+                "id": "/properties/data/properties/rhccData/items/properties/rccdesc",
+                "type": "string"
+              },
+              "memcount": {
+                "id": "/properties/data/properties/rhccData/items/properties/memcount",
+                "type": "integer"
+              },
+              "percentcontrib": {
+                "id": "/properties/data/properties/rhccData/items/properties/percentcontrib",
+                "type": "number"
+              }
+            }
+          }
+        },
+        "accData": {
+          "id": "/properties/data/properties/accData",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/accData/items",
+            "type": "object",
+            "properties": {
+              "acccode": {
+                "id": "/properties/data/properties/accData/items/properties/acccode",
+                "type": "integer"
+              },
+              "accdesc": {
+                "id": "/properties/data/properties/accData/items/properties/accdesc",
+                "type": "string"
+              },
+              "memcount": {
+                "id": "/properties/data/properties/accData/items/properties/memcount",
+                "type": "integer"
+              },
+              "percentcontrib": {
+                "id": "/properties/data/properties/accData/items/properties/percentcontrib",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object",
+      "properties": {
+        "dxcgModelNo": {
+          "id": "/properties/meta/properties/dxcgModelNo",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

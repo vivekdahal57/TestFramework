@@ -1,0 +1,110 @@
+{
+  "$id": "https://nvmisvcgq1.d2hawkeye.net:2025/widgets/topTenDrugs/top5pos",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "57247": {
+          "$id": "/properties/data/properties/57247",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/57247/items",
+            "type": "object",
+            "properties": {
+              "posrxcode": {
+                "$id": "/properties/data/properties/57247/items/properties/posrxcode",
+                "type": "string",
+                "title": "The Posrxcode Schema ",
+                "default": "",
+                "examples": [
+                  "11"
+                ]
+              },
+              "nposrxcode": {
+                "$id": "/properties/data/properties/57247/items/properties/nposrxcode",
+                "type": "integer",
+                "title": "The Nposrxcode Schema ",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "posrxdesc": {
+                "$id": "/properties/data/properties/57247/items/properties/posrxdesc",
+                "type": "string",
+                "title": "The Posrxdesc Schema ",
+                "default": "",
+                "examples": [
+                  "Office"
+                ]
+              },
+              "rowNumber": {
+                "$id": "/properties/data/properties/57247/items/properties/rowNumber",
+                "type": "integer",
+                "title": "The Rownumber Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              }
+            }
+          }
+        },
+        "71844": {
+          "$id": "/properties/data/properties/71844",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/71844/items",
+            "type": "object",
+            "properties": {
+              "posrxcode": {
+                "$id": "/properties/data/properties/71844/items/properties/posrxcode",
+                "type": "string",
+                "title": "The Posrxcode Schema ",
+                "default": "",
+                "examples": [
+                  "22"
+                ]
+              },
+              "nposrxcode": {
+                "$id": "/properties/data/properties/71844/items/properties/nposrxcode",
+                "type": "integer",
+                "title": "The Nposrxcode Schema ",
+                "default": 0,
+                "examples": [
+                  6
+                ]
+              },
+              "posrxdesc": {
+                "$id": "/properties/data/properties/71844/items/properties/posrxdesc",
+                "type": "string",
+                "title": "The Posrxdesc Schema ",
+                "default": "",
+                "examples": [
+                  "On Campus-Outpatient Hospital"
+                ]
+              },
+              "rowNumber": {
+                "$id": "/properties/data/properties/71844/items/properties/rowNumber",
+                "type": "integer",
+                "title": "The Rownumber Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "$id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

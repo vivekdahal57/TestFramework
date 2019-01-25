@@ -1,0 +1,211 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/admissionTrend",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "array",
+      "items": {
+        "$id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "yr": {
+            "$id": "/properties/data/items/properties/yr",
+            "type": "integer",
+            "title": "The Yr Schema ",
+            "default": 0,
+            "examples": [
+              2013
+            ]
+          },
+          "qtr": {
+            "$id": "/properties/data/items/properties/qtr",
+            "type": "integer",
+            "title": "The Qtr Schema ",
+            "default": 0,
+            "examples": [
+              2013
+            ]
+          },
+          "mth": {
+            "$id": "/properties/data/items/properties/mth",
+            "type": "integer",
+            "title": "The Mth Schema ",
+            "default": 0,
+            "examples": [
+              10
+            ]
+          },
+          "admcount": {
+            "$id": "/properties/data/items/properties/admcount",
+            "type": "integer",
+            "title": "The Admcount Schema ",
+            "default": 0,
+            "examples": [
+              14
+            ]
+          },
+          "readmcount": {
+            "$id": "/properties/data/items/properties/readmcount",
+            "type": "integer",
+            "title": "The Readmcount Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "acsc_admcount": {
+            "$id": "/properties/data/items/properties/acsc_admcount",
+            "type": "integer",
+            "title": "The Acsc_admcount Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "admperk": {
+            "$id": "/properties/data/items/properties/admperk",
+            "type": ["number","integer"],
+            "title": "The Admperk Schema ",
+            "default": 0,
+            "examples": [
+              186.8699951171875
+            ]
+          },
+          "readmperk": {
+            "$id": "/properties/data/items/properties/readmperk",
+            "type": ["number","integer"],
+            "title": "The Readmperk Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "acscadmperk": {
+            "$id": "/properties/data/items/properties/acscadmperk",
+            "type": ["number","integer"],
+            "type": "number",
+            "title": "The Acscadmperk Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "costperadm_paid": {
+            "$id": "/properties/data/items/properties/costperadm_paid",
+            "type": ["number","integer"],
+            "title": "The Costperadm_paid Schema ",
+            "default": 0,
+            "examples": [
+              17234.939453125
+            ]
+          },
+          "costperacscadm_paid": {
+            "$id": "/properties/data/items/properties/costperacscadm_paid",
+            "type": ["number","integer"],
+            "title": "The Costperacscadm_paid Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "costperadm_allowed": {
+            "$id": "/properties/data/items/properties/costperadm_allowed",
+            "type": ["number","integer"],
+            "title": "The Costperadm_allowed Schema ",
+            "default": 0,
+            "examples": [
+              17690.25
+            ]
+          },
+          "costperacscadm_allowed": {
+            "$id": "/properties/data/items/properties/costperacscadm_allowed",
+            "type": ["number","integer"],
+            "title": "The Costperacscadm_allowed Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          }
+        }
+      }
+    },
+    "meta": {
+      "$id": "/properties/meta",
+      "type": "object",
+      "properties": {
+        "norm": {
+          "$id": "/properties/meta/properties/norm",
+          "type": "object",
+          "properties": {
+            "acscadmperk": {
+              "$id": "/properties/meta/properties/norm/properties/acscadmperk",
+              "type": ["number","integer"],
+              "title": "The Acscadmperk Schema ",
+              "default": 0,
+              "examples": [
+                3.2799999713897705
+              ]
+            },
+            "costperadm_paid": {
+              "$id": "/properties/meta/properties/norm/properties/costperadm_paid",
+              "type": ["number","integer"],
+              "title": "The Costperadm_paid Schema ",
+              "default": 0,
+              "examples": [
+                20037.419921875
+              ]
+            },
+            "readmperk": {
+              "$id": "/properties/meta/properties/norm/properties/readmperk",
+              "type": ["number","integer"],
+              "title": "The Readmperk Schema ",
+              "default": 0,
+              "examples": [
+                3.319999933242798
+              ]
+            },
+            "costperadm_allowed": {
+              "$id": "/properties/meta/properties/norm/properties/costperadm_allowed",
+              "type": ["number","integer"],
+              "title": "The Costperadm_allowed Schema ",
+              "default": 0,
+              "examples": [
+                21620.580078125
+              ]
+            },
+            "costperacscadm_paid": {
+              "$id": "/properties/meta/properties/norm/properties/costperacscadm_paid",
+              "type": ["number","integer"],
+              "title": "The Costperacscadm_paid Schema ",
+              "default": 0,
+              "examples": [
+                16100.58984375
+              ]
+            },
+            "costperacscadm_allowed": {
+              "$id": "/properties/meta/properties/norm/properties/costperacscadm_allowed",
+              "type": ["number","integer"],
+              "title": "The Costperacscadm_allowed Schema ",
+              "default": 0,
+              "examples": [
+                17778.169921875
+              ]
+            },
+            "admperk": {
+              "$id": "/properties/meta/properties/norm/properties/admperk",
+              "type": ["number","integer"],
+              "title": "The Admperk Schema ",
+              "default": 0,
+              "examples": [
+                56.36000061035156
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name='DailyRunTestSuite' parallel='instances' thread-count="6">
+    <listeners>
+        <listener class-name='com.vh.mi.automation.impl.reporting.CustomReporterListener'/>
+    </listeners>
+
+    <test name='GeneralTestsInternetExplorer'>
+        <groups>
+            <run>
+                <exclude name="Report-Generation"/>
+                <exclude name="Report-Download"/>
+                <exclude name="Download"/>
+                <exclude name="Posting"/>
+                <exclude name="Database"/>
+                <exclude name="Deprecated-Tests"/>
+                <exclude name="Before-After"/>
+                <exclude name="No-Run"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.vh.mi.automation.test.*">
+                <exclude name="com.vh.mi.automation.test.pages.analytics.conversionAnalyzer"></exclude>
+                <exclude name="com.vh.mi.automation.test.pages.analytics.networkAnalyzer"></exclude>
+                <exclude name="com.vh.mi.automation.test.pages.analytics.benifitAdvisor"></exclude>
+                <exclude name="com.vh.mi.automation.test.pages.analytics.acoCostAndUtilization"></exclude>
+                <exclude name="com.vh.mi.automation.test.admin.PostApplicationTest"></exclude>
+                <exclude name="com.vh.mi.automation.test.saml.SSOTests"></exclude>
+            </package>
+        </packages>
+    </test>
+
+</suite>

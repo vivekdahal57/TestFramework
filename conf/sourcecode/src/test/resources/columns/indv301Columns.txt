@@ -1,0 +1,12 @@
+Individual ID
+individual
+Latest Unit
+RI
+ARI
+DM Follow-Up Date
+CM Follow-Up Date
+New ARI
+CM Follow-Up Action
+# of Rehab Admission
+# of Re-admissions
+Pharmacy Paid

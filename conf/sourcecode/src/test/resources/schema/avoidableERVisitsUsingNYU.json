@@ -1,0 +1,52 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:2020/ervisit/avoidableERVisitsUsingNYU",
+  "type": "object",
+  "definitions": {},
+  "schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "category": {
+            "id": "/properties/data/items/properties/category",
+            "type": "string",
+            "title": "The Category Schema ",
+            "default": ""
+          },
+          "sub_category": {
+            "id": "/properties/data/items/properties/sub_category",
+            "type": "string",
+            "title": "The Sub_category Schema ",
+            "default": ""
+          },
+          "sub_cat_amt": {
+            "id": "/properties/data/items/properties/sub_cat_amt",
+            "type": "number",
+            "title": "The Sub_cat_amt Schema ",
+            "default": 0
+          },
+          "cat_amt": {
+            "id": "/properties/data/items/properties/cat_amt",
+            "type": "number",
+            "title": "The Cat_amt Schema ",
+            "default": 0
+          },
+          "total_amt": {
+            "id": "/properties/data/items/properties/total_amt",
+            "type": "number",
+            "title": "The Total_amt Schema ",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

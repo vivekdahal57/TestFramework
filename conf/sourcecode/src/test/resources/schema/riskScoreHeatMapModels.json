@@ -1,0 +1,26 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/riskscore/models",
+  "type": "object",
+  "definitions": {},
+  "schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "integer",
+        "title": "The 0 Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": 0
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": ["object","null"],
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null
+    }
+  }
+}

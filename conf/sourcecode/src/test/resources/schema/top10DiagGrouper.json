@@ -1,0 +1,70 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:2020/ervisit/topTenDiagGroup",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "diagcode": {
+            "id": "/properties/data/items/properties/diagcode",
+            "type": "string",
+            "title": "The Diagcode Schema ",
+            "default": ""
+          },
+          "diagdesc": {
+            "id": "/properties/data/items/properties/diagdesc",
+            "type": "string",
+            "title": "The Diagdesc Schema ",
+            "default": ""
+          },
+          "percent": {
+            "id": "/properties/data/items/properties/percent",
+            "type": ["number","null"],
+            "title": "The Percent Schema ",
+            "default": 0
+          },
+          "PMPM": {
+            "id": "/properties/data/items/properties/PMPM",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0
+          },
+          "PEPM": {
+            "id": "/properties/data/items/properties/PEPM",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0
+          },
+          "ER_PER_K": {
+            "id": "/properties/data/items/properties/ER_PER_K",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0
+          },
+          "NO_OF_MEMBERS": {
+            "id": "/properties/data/items/properties/NO_OF_MEMBERS",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0
+          },
+          "MEM_PER_K": {
+            "id": "/properties/data/items/properties/MEM_PER_K",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0
+          }
+        },
+        "required": ["diagcode", "diagdesc"]
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

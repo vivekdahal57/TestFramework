@@ -1,0 +1,115 @@
+{
+  "$id": "https://nvmisvcgq1.d2hawkeye.net:2025/widgets/topTenDrugs",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "topTenDrugs": {
+          "$id": "/properties/data/properties/topTenDrugs",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/topTenDrugs/items",
+            "type": "object",
+            "properties": {
+              "nsrcprocdrugcode": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/nsrcprocdrugcode",
+                "type": "integer",
+                "title": "The Nsrcprocdrugcode Schema ",
+                "default": 0,
+                "examples": [
+                  57247
+                ]
+              },
+              "srcprocndccode": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/srcprocndccode",
+                "type": "string",
+                "title": "The Srcprocndccode Schema ",
+                "default": "",
+                "examples": [
+                  "J7325"
+                ]
+              },
+              "srcprocndcdesc": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/srcprocndcdesc",
+                "type": "string",
+                "title": "The Srcprocndcdesc Schema ",
+                "default": "",
+                "examples": [
+                  "HYALURONAN OR DERIVATIVE, SYNVISC OR SYNVISC-ONE, FOR INTRA-ARTICULAR INJECTION, 1 MG"
+                ]
+              },
+              "value": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/value",
+                "type": "number",
+                "title": "The Value Schema ",
+                "default": 0,
+                "examples": [
+                  27.15198516845703
+                ]
+              },
+              "percentContribution": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/percentContribution",
+                "type": "number",
+                "title": "The Percentcontribution Schema ",
+                "default": 0,
+                "examples": [
+                  0.4861152768135071
+                ]
+              },
+              "ROWNUMBER": {
+                "$id": "/properties/data/properties/topTenDrugs/items/properties/ROWNUMBER",
+                "type": "integer",
+                "title": "The Rownumber Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              }
+            }
+          }
+        },
+        "totalNonPbmDrugs": {
+          "$id": "/properties/data/properties/totalNonPbmDrugs",
+          "type": "object",
+          "properties": {
+            "totalMedical": {
+              "$id": "/properties/data/properties/totalNonPbmDrugs/properties/totalMedical",
+              "type": "number",
+              "title": "The Totalmedical Schema ",
+              "default": 0,
+              "examples": [
+                19716.041015625
+              ]
+            },
+            "percentContribution": {
+              "$id": "/properties/data/properties/totalNonPbmDrugs/properties/percentContribution",
+              "type": "number",
+              "title": "The Percentcontribution Schema ",
+              "default": 0,
+              "examples": [
+                0.0028329743072390556
+              ]
+            },
+            "value": {
+              "$id": "/properties/data/properties/totalNonPbmDrugs/properties/value",
+              "type": "number",
+              "title": "The Value Schema ",
+              "default": 0,
+              "examples": [
+                55.85503387451172
+              ]
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "$id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

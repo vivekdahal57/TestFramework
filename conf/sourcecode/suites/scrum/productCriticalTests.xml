@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name='ProductCritical' parallel='instances' thread-count="6">
+    <listeners>
+        <listener class-name='com.vh.mi.automation.impl.reporting.CustomReporterListener'/>
+    </listeners>
+
+    <test name='All Tests'>
+        <groups>
+            <run>
+                <include name="Product-Critical"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.vh.mi.automation.test.*"/>
+        </packages>
+    </test>
+
+</suite>

@@ -1,0 +1,69 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/erVisitUtilization",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "statecode": {
+            "id": "/properties/data/items/properties/statecode",
+            "type": "string",
+            "title": "The Statecode Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "totalervisits": {
+            "id": "/properties/data/items/properties/totalervisits",
+            "type": "integer",
+            "title": "The Totalervisits Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          },
+          "totalmembers": {
+            "id": "/properties/data/items/properties/totalmembers",
+            "type": "integer",
+            "title": "The Totalmembers Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          },
+          "pmpm": {
+            "id": "/properties/data/items/properties/pmpm",
+            "type": "number",
+            "title": "The Pmpm Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object",
+      "properties": {
+        "erVisitPopulation": {
+          "id": "/properties/meta/properties/erVisitPopulation",
+          "type": "object",
+          "properties": {
+            "totalPopulation": {
+              "id": "/properties/meta/properties/erVisitPopulation/properties/totalPopulation",
+              "type": ["integer","null"],
+              "title": "The Totalpopulation Schema ",
+              "default": 0
+            },
+            "analyzedPopulation": {
+              "id": "/properties/meta/properties/erVisitPopulation/properties/analyzedPopulation",
+              "type": ["integer","null"],
+              "title": "The Analyzedpopulation Schema ",
+              "default": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

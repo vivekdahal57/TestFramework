@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="apiTestSuite"  parallel="false">
+    <listeners>
+        <listener class-name="com.vh.mi.automation.impl.reporting.CustomReporterListener"></listener>
+    </listeners>
+<test name="ApiTestSuite_AllTests" parallel="false" preserve-order="true" thread-count="1">
+    <classes>
+        <class name='com.vh.mi.apiAutomation.test.rxWidgetTests.PharmacyWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.rxWidgetTests.PharmacyWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitUtilizationWidgetTests.ErVisitUtilizationWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitUtilizationWidgetTests.ErVisitWidgetUtilizationSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.demographicsMovement.DemographicsWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.demographicsMovement.DemographicsWidgetTest'/>
+        <class name='com.vh.mi.apiAutomation.test.riskScoreHeatMap.RiskScoreHeatMapWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.riskScoreHeatMap.RiskScoreHeatMapWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.coordinationOfCareTests.CoordinationOfCareWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.coordinationOfCareTests.CoordinationOfCareWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.predictedCostByRiskBand.PredictedCostWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.predictedCostByRiskBand.PredictedCostWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.topTenDrugs.TopTenDrugsSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.topTenDrugs.TopTenDrugsTest' />
+        <class name='com.vh.mi.apiAutomation.test.costTrendByClaimType.CostTrendByClaimTypeSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.costTrendByClaimType.CostTrendByClaimTypeTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitByFrequency.ErVisitByFrequencySFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitByFrequency.ErVisitByFrequencyWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.erTopTenDiagnosisGrouper.ERTop10DiagnosisGrouperSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.erTopTenDiagnosisGrouper.ERTop10DiagnosisGrouperTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVsUrgentCareWidgetTests.ERvsUrgentCareTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVsUrgentCareWidgetTests.ERvsUrgentCareSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.avoidableErVisitNYUWidgetTests.AvoidableERVisitNYUTest' />
+        <class name='com.vh.mi.apiAutomation.test.avoidableErVisitNYUWidgetTests.AvoidableERVisitNYUSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.medicalCostDistribution.MedicalCostDistributionTest' />
+        <class name='com.vh.mi.apiAutomation.test.medicalCostDistribution.MedicalCostDistributionSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.conditoinDrivingAdmission.ConditionDrivingAdmissionWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.conditoinDrivingAdmission.ConditionDrivingAdmissionWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.inpatientTrend.InpatientTrendWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.inpatientTrend.InpatientTrendWidgetTest' />
+        <class name='com.vh.mi.apiAutomation.test.pqiPdiAcscAdmission.PqiPdiAcscAdmissionWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.pqiPdiAcscAdmission.PqiPdiAcscAdmissionWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.posForTopNonPBMWidgetTests.POSForTopNonPBMTest' />
+        <class name='com.vh.mi.apiAutomation.test.posForTopNonPBMWidgetTests.POSForTopNonPBMSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.topConditionsForERVisits.TopConditionsForERVisitsTest' />
+        <class name='com.vh.mi.apiAutomation.test.topConditionsForERVisits.TopConditionForERVisitsSFWUserTest' />
+    </classes>
+</test>
+</suite>

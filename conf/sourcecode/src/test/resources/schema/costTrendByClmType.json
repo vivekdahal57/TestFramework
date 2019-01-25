@@ -1,0 +1,81 @@
+{
+  "$id": "https://nvmisvcgq1.d2hawkeye.net:2025/widgets/costTrendByClmType",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "array",
+      "items": {
+        "$id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "clmtype": {
+            "$id": "/properties/data/items/properties/clmtype",
+            "type": "string",
+            "title": "The Clmtype Schema ",
+            "default": "",
+            "examples": [
+              "MED"
+            ]
+          },
+          "yr": {
+            "$id": "/properties/data/items/properties/yr",
+            "type": "integer",
+            "title": "The Yr Schema ",
+            "default": 0,
+            "examples": [
+              2013
+            ]
+          },
+          "qtr": {
+            "$id": "/properties/data/items/properties/qtr",
+            "type": "integer",
+            "title": "The Qtr Schema ",
+            "default": 0,
+            "examples": [
+              2013
+            ]
+          },
+          "mth": {
+            "$id": "/properties/data/items/properties/mth",
+            "type": "integer",
+            "title": "The Mth Schema ",
+            "default": 0,
+            "examples": [
+              12
+            ]
+          },
+          "totalamount": {
+            "$id": "/properties/data/items/properties/totalamount",
+            "type": "number",
+            "title": "The Totalamount Schema ",
+            "default": 0,
+            "examples": [
+              13403227
+            ]
+          },
+          "pmpm": {
+            "$id": "/properties/data/items/properties/pmpm",
+            "type": ["number","null"],
+            "title": "The Pmpm Schema ",
+            "default": 0,
+            "examples": [
+              2920.090087890625
+            ]
+          },
+          "pepm": {
+            "$id": "/properties/data/items/properties/pepm",
+            "type": ["number","null"],
+            "title": "The Pepm Schema ",
+            "default": 0,
+            "examples": [
+              5133.3701171875
+            ]
+          }
+        }
+      }
+    }
+  }
+}

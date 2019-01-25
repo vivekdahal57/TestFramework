@@ -1,0 +1,42 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/coordinationOfCare",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": ["array","object"],
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "statename": {
+            "id": "/properties/data/items/properties/statename",
+            "type": "string",
+            "title": "The Statename Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "statecode": {
+            "id": "/properties/data/items/properties/statecode",
+            "type": "string",
+            "title": "The Statecode Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "averageUniqueProviders": {
+            "id": "/properties/data/items/properties/averageUniqueProviders",
+            "type": "number",
+            "title": "The Averageuniqueproviders Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

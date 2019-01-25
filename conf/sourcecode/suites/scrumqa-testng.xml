@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ScrumQASuite1" parallel="instances" thread-count="8">
+    <test name="ScrumQASuite1">
+        <classes>
+            <class name="com.vh.mi.automation.test.pages.common.LoginPageTest"/>
+            <class name="com.vh.mi.automation.test.pages.common.WelcomePageTest"/>
+
+            <class name="com.vh.mi.automation.test.comp.navigationPanel.NavigationPanel_Switchboards_Test_US23218"/>
+            <class name="com.vh.mi.automation.test.comp.navigationPanel.NavigationPanel_Link_AssociatedSection_Test_US23219"/>
+            <class name="com.vh.mi.automation.test.comp.navigationPanel.NavigationPanel_Link_Ordering_Test_US23219"/>
+            <class name="com.vh.mi.automation.test.comp.navigationPanel.NavigationPanel_ExpandCollapse_Section_Test_US23220"/>
+            <class name="com.vh.mi.automation.test.comp.navigationPanel.NavigationPanel_Links_Test_US23221"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301RBTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301DataGridDrillTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301DataGridCustomizationTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301DataGrid_FilteringTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.individuals.Indv301DataGrid_SortingTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.demography.DemographyD05APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.demography.DemographyD05RBTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.demography.DemographyD05DataGridCustomizationTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.hospitalProfiler.HospitalProfilesHP100APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.hospitalProfiler.HospitalProfilesHP100DataGridCustomizationTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.expenseDistribution.ExpenseDistributionAPTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.diseaseRegistry.DiseaseRegistryCD016APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.diseaseRegistry.DiseaseRegistryCD016AdjustedNormTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.claims.Claims01APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.claims.Claims01RBTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.claims.Claims01DataGridSortingTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.claims.Claims01DataGridFilteringTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.executiveSummary.ExecutiveSummaryAPTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.executiveSummary.ExecutiveSummaryRBTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.executiveSummary.ExecutiveSummaryAdjustedNormTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.networkUtilization.NetworkUtilizationNU105APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.networkUtilization.NetworkUtilizationNU105RBTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.providerProfiler.ProviderProfilerV044APTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.utilizationMetrics.UtilizationMetricsHM50APTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.utilizationMetrics.UtilizationMetricsBLComponentTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.conversionAnalyzer.ConversionAnalyzerA17DataGridSortingTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.conversionAnalyzer.ConversionAnalyzerA17DataGridFilteringTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.conversionAnalyzer.ConversionAnalyzerA17APTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.queryBuilder.mvca.basic.MVCABasic301BAPTest"/>
+            <class name="com.vh.mi.automation.test.pages.queryBuilder.mvca.basic.MVCABasic310B_RBTest"/>
+            <class name="com.vh.mi.automation.test.pages.queryBuilder.mvca.expert.MVCAExpert301EAPTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.qualityAndRisk.QualityAndRiskQRMTest"/>
+
+            <class name="com.vh.mi.automation.test.miscrights.AdminPageAccessibilityTest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightPHITest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightFullFinancialAccessTest"/>
+            <class name="com.vh.mi.automation.test.miscrights.MiscRightShowMemberScoreCardTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.common.LoginPageTest"/>
+            <class name="com.vh.mi.automation.test.security.PasswordChangeTest"/>
+            <class name="com.vh.mi.automation.test.security.ForgotPasswordTest"/>
+            <class name="com.vh.mi.automation.test.security.UsersAccessTest"/>
+
+            <class name="com.vh.mi.automation.test.pages.analytics.customPerformanceMeasures.CpmFavQualityMeasuresTest"/>
+            <class name="com.vh.mi.automation.test.pages.analytics.customPerformanceMeasures.CPM01DataGridCustomizerTest"/>
+
+        </classes>
+    </test>
+</suite>

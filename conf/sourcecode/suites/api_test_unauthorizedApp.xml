@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="apiTestSuite"  parallel="false">
+    <listeners>
+        <listener class-name="com.vh.mi.automation.impl.reporting.CustomReporterListener"></listener>
+    </listeners>
+<test name="ApiTestSuite_AllTests" parallel="false" preserve-order="true">
+    <groups>
+        <run>
+            <include name="UnauthorizedAppId"  />
+        </run>
+    </groups>
+    <classes>
+        <class name='com.vh.mi.apiAutomation.test.rxWidgetTests.PharmacyWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitUtilizationWidgetTests.ErVisitWidgetUtilizationSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.erVisitWidgetTests.ErVisitWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.demographicsMovement.DemographicsWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.riskScoreHeatMap.RiskScoreHeatMapWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.coordinationOfCareTests.CoordinationOfCareWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.predictedCostByRiskBand.PredictedCostWidgetSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.topTenDrugs.TopTenDrugsSFWUserTest' />
+        <class name='com.vh.mi.apiAutomation.test.costTrendByClaimType.CostTrendByClaimTypeSFWUserTest' />
+    </classes>
+</test>
+</suite>

@@ -1,0 +1,93 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:2020/ervisit/erVsUrgentCare/bucketed",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "OP%20ER": {
+          "id": "/properties/data/properties/OP%20ER",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/OP%20ER/items",
+            "type": ["number","null"],
+            "title": "The 0th Schema ",
+            "default": 0
+          }
+        },
+        "Urgent%20Care": {
+          "id": "/properties/data/properties/Urgent%20Care",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/Urgent%20Care/items",
+            "type": ["number","null"],
+            "title": "The 0th Schema ",
+            "default": 0
+          }
+        },
+        "IP%20ER": {
+          "id": "/properties/data/properties/IP%20ER",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/IP%20ER/items",
+            "type": ["number","null"],
+            "title": "The 0th Schema ",
+            "default": 0
+          }
+        },
+        "Total%20ER": {
+          "id": "/properties/data/properties/Total%20ER",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/Total%20ER/items",
+            "type": ["number","null"],
+            "title": "The 0th Schema ",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object",
+      "properties": {
+        "bucket": {
+          "id": "/properties/meta/properties/bucket",
+          "type": "array",
+          "items": {
+            "id": "/properties/meta/properties/bucket/items",
+            "type": "string",
+            "title": "The 0th Schema ",
+            "default": ""
+          }
+        },
+        "normData": {
+          "id": "/properties/meta/properties/normData",
+          "type": "object",
+          "properties": {
+            "NORM%20-%20Urgent%20Care%20Visit%20per%201,000": {
+              "id": "/properties/meta/properties/normData/properties/NORM%20-%20Urgent%20Care%20Visit%20per%201,000",
+              "type": "number",
+              "title": "The Norm - urgent care visit per 1,000 Schema ",
+              "default": 0
+            },
+            "NORM%20-%20Total%20ER%20Vist%20per%201,000": {
+              "id": "/properties/meta/properties/normData/properties/NORM%20-%20Total%20ER%20Vist%20per%201,000",
+              "type": "number",
+              "title": "The Norm - total er vist per 1,000 Schema ",
+              "default": 0
+            },
+            "NORM%20-%20OP%20ER%20visit%20per%201,000": {
+              "id": "/properties/meta/properties/normData/properties/NORM%20-%20OP%20ER%20visit%20per%201,000",
+              "type": "number",
+              "title": "The Norm - op er visit per 1,000 Schema ",
+              "default": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Plan Type
+Total Members
+Average Age
+Medical Plan Paid
+Pharmacy Plan Paid
+Admits Per 1000
+ALOS
+% Re-admission
+ACSC Re-admissions Per 1000
+ER Visits Per 1000
+Average CGI
+Model # 18
+Model # 55
+Model # 56

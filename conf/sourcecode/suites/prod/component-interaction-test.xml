@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="component-interaction">
+	<test name="report-generation">
+		<classes>
+			<class name="com.vh.mi.automation.test.pages.queryBuilder.claimsSearch.ClaimsSearchExtractGenerationTest"/>
+			<class name="com.vh.mi.automation.test.pages.analytics.dxcgRiskSolutions.dxcgRiskSolutionsStaticReports.ReportGenerationTest"/>
+			<class name="com.vh.mi.automation.test.pages.reportManager.GenerateMIRReportTest"/>
+			<class name="com.vh.mi.automation.test.pages.queryBuilder.stratifier.StratifierCohortCreationTest"/>
+		</classes>
+	</test>
+	<test name="general-tests">
+		<classes>
+			<class name="com.vh.mi.automation.test.security.PasswordChangeTest"/>
+			<class name="com.vh.mi.automation.test.pages.common.LoginPageTest">
+				<methods>
+					<include name="userShouldReachLoginPageAfterLogout" />
+				</methods>
+			</class>
+			<class name="com.vh.mi.automation.test.saml.SSOTests">
+				<methods>
+					<include name="memberIDOfSpecificBLCanLoginViaSSO_TC2694" />
+					<include name="correctApplyOfmiscRightToSamlUserHighMarkPI" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="report-download">
+		<classes>
+			<class name="com.vh.mi.automation.test.pages.reportManager.ReportManagerTest"/>
+			<class name="com.vh.mi.automation.test.pages.outReach.letterGeneration.UploadAndDownloadLetterTemplateTest"/>
+			<class name="com.vh.mi.automation.test.pages.analytics.dxcgRiskSolutions.dxcgRiskSolutionsStaticReports.DownloadReportTest"/>
+			<class name="com.vh.mi.automation.test.pages.reportManager.DownloadMIRReportTest"/>
+			<class name="com.vh.mi.automation.test.pages.queryBuilder.claimsSearch.ClaimsSearchExtractDownloadTest">
+				<methods>
+					<include name="downloadAndVerifyReport" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,49 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:2025/ervisit/erVisitDistribution/bucketed",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "IP": {
+          "id": "/properties/data/properties/IP",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/IP/items",
+            "type": "number",
+            "title": "The 0th Schema ",
+            "default": 0.0
+          }
+        },
+        "OP": {
+          "id": "/properties/data/properties/OP",
+          "type": "array",
+          "items": {
+            "id": "/properties/data/properties/OP/items",
+            "type": "number",
+            "title": "The 0th Schema ",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object",
+      "properties": {
+        "buckets": {
+          "id": "/properties/meta/properties/buckets",
+          "type": "array",
+          "items": {
+            "id": "/properties/meta/properties/buckets/items",
+            "type": "string",
+            "title": "The 0th Schema ",
+            "default": ""
+          }
+        }
+      }
+    }
+  }
+}

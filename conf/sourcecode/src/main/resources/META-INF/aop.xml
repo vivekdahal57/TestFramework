@@ -1,0 +1,14 @@
+<aspectj>
+    <aspects>
+        <aspect name="com.vh.mi.automation.aspects.ClickAspect"/>
+        <aspect name="com.vh.mi.automation.aspects.TestProfilingAspect"/>
+        <aspect name="com.vh.mi.automation.aspects.ScreenShotAspect"/>
+        <aspect name="com.vh.mi.automation.test.base.UserManagementAspect"/>
+        <aspect name="com.vh.mi.automation.aspects.AnnotatedMethodsProfilingAspect"/>
+    </aspects>
+    <weaver>
+        <!-- make sure that we only weave aspects inside our project -->
+        <include within="com.vh..*"/>
+        <include within="org.openqa.selenium.*"/>
+    </weaver>
+</aspectj>

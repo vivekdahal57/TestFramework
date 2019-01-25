@@ -1,0 +1,13 @@
+package com.vh.mi.automation.api.pages.analytics.claims.Drill;
+
+import com.vh.mi.automation.api.comp.dataGrid.IDataGrid;
+import com.vh.mi.automation.api.pages.common.IDrillPage;
+
+/**
+ * Created by i10359 on 12/27/17.
+ */
+public interface IMonthDrillPage extends IDrillPage {
+    public IDataGrid getDataGrid();
+    public IDrillPage drillDownToPage(String page);
+
+}

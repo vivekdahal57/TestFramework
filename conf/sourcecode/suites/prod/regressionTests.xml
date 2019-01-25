@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name='Regression Tests'>
+    <test name='ReportGenerationTests'>
+        <groups>
+            <run>
+                <include name="Report-Generation"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.vh.mi.automation.test.*"/>
+        </packages>
+    </test>
+
+    <test name='GeneralTestsChrome'>
+        <groups>
+            <run>
+                <exclude name="Report-Generation"/>
+                <exclude name="Report-Download"/>
+                <exclude name="Posting"/>
+                <exclude name="Database"/>
+                <exclude name="Deprecated-Tests"/>
+                <exclude name="No-Run"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.vh.mi.automation.test.*">
+                <exclude name="com.vh.mi.automation.test.pages.analytics.networkAnalyzer"></exclude>
+                <exclude name="com.vh.mi.automation.test.pages.analytics.benifitAdvisor"></exclude>
+                <exclude name="com.vh.mi.automation.test.pages.analytics.acoCostAndUtilization"></exclude>
+            </package>
+        </packages>
+    </test>
+
+    <test name='ReportDownloadTests'>
+        <groups>
+            <run>
+                <include name="Report-Download"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.vh.mi.automation.test.*"/>
+        </packages>
+    </test>
+</suite>

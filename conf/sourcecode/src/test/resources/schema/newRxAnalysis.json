@@ -1,0 +1,85 @@
+{
+  "$id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/rxAnalysis",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "array",
+      "items": {
+        "$id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "ndrugcode": {
+            "$id": "/properties/data/items/properties/ndrugcode",
+            "type": "integer",
+            "title": "The Ndrugcode Schema ",
+            "default": 0,
+            "examples": [
+              7137
+            ]
+          },
+          "drug_desc": {
+            "$id": "/properties/data/items/properties/drug_desc",
+            "type": "string",
+            "title": "The Drug_desc Schema ",
+            "default": "",
+            "examples": [
+              "NEXIUM"
+            ]
+          },
+          "drugType": {
+            "$id": "/properties/data/items/properties/drugType",
+            "type": "string",
+            "title": "The Drugtype Schema ",
+            "default": "",
+            "examples": [
+              "Branded"
+            ]
+          },
+          "scriptperk": {
+            "$id": "/properties/data/items/properties/scriptperk",
+            "type": "number",
+            "title": "The Scriptperk Schema ",
+            "default": 0,
+            "examples": [
+              173.05999755859375
+            ]
+          },
+          "costperscript": {
+            "$id": "/properties/data/items/properties/costperscript",
+            "type": "number",
+            "title": "The Costperscript Schema ",
+            "default": 0,
+            "examples": [
+              237.1199951171875
+            ]
+          },
+          "mem_count": {
+            "$id": "/properties/data/items/properties/mem_count",
+            "type": "integer",
+            "title": "The Mem_count Schema ",
+            "default": 0,
+            "examples": [
+              35
+            ]
+          },
+          "prescount": {
+            "$id": "/properties/data/items/properties/prescount",
+            "type": "integer",
+            "title": "The Prescount Schema ",
+            "default": 0,
+            "examples": [
+              295
+            ]
+          }
+        }
+      }
+    },
+    "meta": {
+      "$id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}

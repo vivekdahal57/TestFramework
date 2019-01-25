@@ -1,0 +1,45 @@
+{
+  "id": "https://nvmisvcgq1.d2hawkeye.net:1800/widgets/riskband",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "data": {
+      "id": "/properties/data",
+      "type": "array",
+      "items": {
+        "id": "/properties/data/items",
+        "type": "object",
+        "properties": {
+          "RRSBand": {
+            "id": "/properties/data/items/properties/RRSBand",
+            "type": "string",
+            "title": "The Rrsband Schema",
+            "default": ""
+          },
+          "PopAvgExpectedPMPY": {
+            "id": "/properties/data/items/properties/PopAvgExpectedPMPY",
+            "type": "number",
+            "title": "The Popavgexpectedpmpy Schema",
+            "default": 0
+          },
+          "AvgRRS": {
+            "id": "/properties/data/items/properties/AvgRRS",
+            "type": "number",
+            "title": "The Avgrrs Schema",
+            "default": 0
+          },
+          "total_members": {
+            "id": "/properties/data/items/properties/total_members",
+            "type": "integer",
+            "title": "The Total_members Schema",
+            "default": 0
+          }
+        }
+      }
+    },
+    "meta": {
+      "id": "/properties/meta",
+      "type": "object"
+    }
+  }
+}
